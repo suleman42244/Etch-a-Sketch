@@ -1,53 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Pixelify+Sans&family=Young+Serif&display=swap');
+
+*{
+    font-family: 'Pixelify Sans', cursive;
+}
+
 body{
-    background-color: #B47757;
-    font-family: 'Young Serif', serif;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    background-color: rgb(219, 129, 11);
+    margin-top: -30px;
 }
 
-.buttons{
+h1{
+    font-size: 70px;
+    color: black;
+    text-shadow: 5px 5px white;
+}
+
+.btns{
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 500px;
-    height: 70px;
+    width: 700px;
+    height: 50px;
+    font-size: 20px;
 }
-
 .reset{
+    padding: 10px 30px;
+    background-color: aqua;
+    border: 2px solid white;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.black{
+    padding: 10px 30px;
     background-color: black;
-    transform: translateY(4px);
-    border: 2px solid white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-family: 'Young Serif', serif;
     color: white;
-    font-size: 15px;
-    cursor: pointer;
-    font-weight: 700;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-size: 20px;
 }
-
+.size{
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-size: 20px;
+}
 .rgb{
-    background: radial-gradient(ellipse, red, green, blue);
-    border: 2px solid white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-family: 'Young Serif', serif;
-    font-size: 15px;
+    padding: 10px 30px;
+    background: linear-gradient(45deg, red, green, blue);
     color: white;
-    cursor: pointer;
-    font-weight: 700;
+    border: 2px solid white;
+    border-radius: 20px;
 }
 
-.color{
-    border: 2px solid white;
-    padding: 10px 20px;
+.container {
+    margin-top: 50px;
+    display: inline-grid;
+    grid-template-columns: repeat(16, 2fr);
+    grid-template-rows: repeat(16, 2fr);
+    border: 5px solid white;
     border-radius: 5px;
-    font-family: 'Young Serif', serif;
-    font-size: 15px;
-    cursor: pointer;
-    font-weight: 700;
+    height: 575px;
+    width: 575px;
+    background-color: gray;
+    box-shadow: 10px 10px;
+}
+
+.cell{
+    background-color: white;
+    border: 1px solid black;
+}
+
+footer{
+    font-size: 25px;
+    bottom: 0;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.gh-logo{
+    width: 35px;
+    height: 35px;
+    margin-bottom: -9px;
+    margin-right: 10px;
 }
